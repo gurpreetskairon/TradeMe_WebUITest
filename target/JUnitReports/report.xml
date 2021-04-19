@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.532">
+    <testcase classname="Search Used Cars Functionality" name="Query for an existing Used Car and confirm the details shown for that car" time="18.193">
+        <system-out><![CDATA[Given the user is on the home page..........................................passed
+Given the user is on the used cars page.....................................passed
+When the user searches for a 2008 Ford Transit used car.....................passed
+Then validate the Number plate, Kilometres, Body, Seats of the car are displayed on the screen.passed
+]]></system-out>
+    </testcase>
+</testsuite>

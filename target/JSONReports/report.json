@@ -1,0 +1,107 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7677328000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-18T07:23:07.082Z",
+        "line": 17,
+        "name": "Query for an existing Used Car and confirm the details shown for that car",
+        "description": "",
+        "id": "search-used-cars-functionality;query-for-an-existing-used-car-and-confirm-the-details-shown-for-that-car;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1686493800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the used cars page",
+            "match": {
+              "location": "stepdefinitions.SearchSteps.the_user_is_on_the_used_cars_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7117503400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user searches for a 2008 Ford Transit used car",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2008 Ford Transit",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.SearchSteps.the_user_searches_for_a_used_car(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1544417000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate the Number plate, Kilometres, Body, Seats of the car are displayed on the screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Number plate, Kilometres, Body, Seats",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefinitions.SearchSteps.validate_the_car_details(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SearchUsedCars"
+          }
+        ]
+      }
+    ],
+    "name": "Search Used Cars Functionality",
+    "description": "",
+    "id": "search-used-cars-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featurefiles/Search.feature",
+    "tags": [
+      {
+        "name": "@SearchUsedCars",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
